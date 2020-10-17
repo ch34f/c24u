@@ -4,24 +4,13 @@ block content
   h1 C24U
   p.lead Cyber Command Control Center
   hr
-  .row
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
+  #container.col
+    style.
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+
+  .mx-auto(style="height: 600px; width: 500px; background: url('images/c2-4u.png')")
+    ul#messages
+  form.mx-auto(action='' style="width:500px")
+    input#m(autocomplete='off' style="width:90%")
+    button Send
